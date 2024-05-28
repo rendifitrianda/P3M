@@ -50,9 +50,18 @@
                 <img src="/assets/assets/img/logo.png" alt="">
                 <span class="d-none d-lg-block" style="color: white">P3M</span>
             </a>
-            <i class="bi bi-list toggle-sidebar-btn"></i>
+            <i class="bi bi-list toggle-sidebar-btn" style="color: white"></i>
         </div><!-- End Logo -->
-        <span style="width: 150px">
+
+        <span style="width: 120px">
+            <div>
+                <div type="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white">
+                    Dashboard
+                </div>
+            </div>
+        </span>
+
+        <span style="width: 130px">
             <div class="dropdown-center">
                 <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
                     style="color: white">
