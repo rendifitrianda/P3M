@@ -66,9 +66,16 @@
         <x-template.monitoring />
         <x-template.data_pendukung />
         <div class="content">
-            <div class="container-fluid">
-                {{ $slot }}
+            <div class="wrapper">
+                <div class="content-wrapper">
+                    <div class="content">
+                        <div class="container-fluid pt-3">
+                            {{ $slot }}
+                        </div>
+                    </div>
+                </div>
             </div>
+        </div>
         </div>
         <x-template.sidebar />
         <x-template.navbar />
