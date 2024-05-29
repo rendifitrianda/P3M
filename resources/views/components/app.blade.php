@@ -46,20 +46,17 @@
     <x-template.sidebar />
 
     <main id="main" class="main">
-        <section class="section">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Area Chart</h5>
-                        </div>
-                    </div>
+        <div class="content-wrapper">
+            <div class="content">
+                <div class="container-fluid pt-3">
+                    {{ $slot }}
                 </div>
             </div>
+        </div>
         </section>
-
     </main><!-- End #main -->
     <x-template.footer />
+    <x-template.profile />
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
