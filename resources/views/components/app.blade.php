@@ -48,7 +48,7 @@
     <main id="main" class="main">
         <div class="content-wrapper">
             <div class="content">
-                <div class="container-fluid pt-3">
+                <div class="container-fluid pt-2">
                     {{ $slot }}
                 </div>
             </div>
@@ -56,7 +56,7 @@
         </section>
     </main><!-- End #main -->
     <x-template.footer />
-    <x-template.profile />
+    {{-- <x-template.profile /> --}}
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>

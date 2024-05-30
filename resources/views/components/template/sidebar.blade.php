@@ -9,18 +9,62 @@
         </li><!-- End Dashboard Nav -->
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-layout-text-window-reverse"></i><span>Tables</span><i
+                <i class="bi bi-layout-text-window-reverse"></i><span>Monitoring</span><i
+                    class="bi bi-chevron-down ms-auto"></i>
+            </a>
+            <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+                <li>
+                    <a href="reguler">
+                        <i class="bi bi-circle"></i><span>Usulan Reguler</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="perbaikan usulan">
+                        <i class="bi bi-circle"></i><span>Perbaikan Usulan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="catatan harian">
+                        <i class="bi bi-circle"></i><span>Catatan harian</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables-data.html">
+                        <i class="bi bi-circle"></i><span>Laporan kemajuan</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables-data.html">
+                        <i class="bi bi-circle"></i><span>Laporan Akhir</span>
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <!-- End Tables Nav -->
+        <li class="nav-item">
+            <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+                <i class="bi bi-layout-text-window-reverse"></i><span>Data Pendukung</span><i
                     class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
                     <a href="tables-general.html">
-                        <i class="bi bi-circle"></i><span>General Tables</span>
+                        <i class="bi bi-circle"></i><span>Profile Lembaga</span>
                     </a>
                 </li>
                 <li>
                     <a href="tables-data.html">
-                        <i class="bi bi-circle"></i><span>Data Tables</span>
+                        <i class="bi bi-circle"></i><span>Cari Akun</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables-general.html">
+                        <i class="bi bi-circle"></i><span>Singkronasi Prodi</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="tables-data.html">
+                        <i class="bi bi-circle"></i><span>Singkronasi Dosen</span>
                     </a>
                 </li>
             </ul>
