@@ -29,6 +29,14 @@ Route::get('laporan kemajuan', function () {
     return view('frontend.opt.laporan_kemajuan');
 });
 
-Route::get('admin/opt', [OptController::class, 'index']);
+Route::get('laporan akhir', function () {
+    return view('frontend.opt.laporan_akhir');
+});
+
+Route::get('profile lembaga', function () {
+    return view('frontend.data_pendukung.profile_lembaga');
+});
+
+
 
 Route::get('admin/opt', [OptController::class, 'index']);

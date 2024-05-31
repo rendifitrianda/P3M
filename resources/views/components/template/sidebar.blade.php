@@ -34,7 +34,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="tables-data.html">
+                    <a href="laporan akhir">
                         <i class="bi bi-circle"></i><span>Laporan Akhir</span>
                     </a>
                 </li>
@@ -48,7 +48,7 @@
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="tables-general.html">
+                    <a href="profile lembaga">
                         <i class="bi bi-circle"></i><span>Profile Lembaga</span>
                     </a>
                 </li>
