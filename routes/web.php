@@ -25,4 +25,8 @@ Route::get('catatan harian', function () {
     return view('frontend.opt.catatan_harian');
 });
 
+Route::get('laporan kemajuan', function () {
+    return view('frontend.opt.laporan_kemajuan');
+});
+
 Route::get('admin/opt', [OptController::class, 'index']);

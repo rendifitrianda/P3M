@@ -29,7 +29,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="tables-data.html">
+                    <a href="laporan kemajuan">
                         <i class="bi bi-circle"></i><span>Laporan kemajuan</span>
                     </a>
                 </li>

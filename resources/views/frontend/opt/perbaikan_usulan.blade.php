@@ -23,7 +23,8 @@
                 <div class="d-flex align-items-center row">
                     <div class="mb-2 col-md-2"><button type="button" disabled=""
                             class="btn btn-success btn btn-secondary disabled"><i
-                                class="bi bi-file-earmark-excel font-size-10 align-middle me-2"></i>Excel</button></div>
+                                class="bi bi-file-earmark-excel font-size-10 align-middle me-2"></i>Excel</button>
+                    </div>
                     <div class="d-flex justify-content-end col-md-10">
                         <h9 class="card-title">Jumlah Proposal:0</h9>
                     </div>
