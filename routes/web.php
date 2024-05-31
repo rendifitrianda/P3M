@@ -30,3 +30,5 @@ Route::get('laporan kemajuan', function () {
 });
 
 Route::get('admin/opt', [OptController::class, 'index']);
+
+Route::get('admin/opt', [OptController::class, 'index']);
