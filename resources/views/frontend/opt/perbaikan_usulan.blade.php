@@ -32,14 +32,18 @@
                             </div>
                             {{-- <i class="bi bi-file-earmark-excel"></i> --}}
                         </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">
                         <div class="mb-2 row">
                             <div class="col-md-12">
                                 <h1 class="card-title">Daftar Usulan</h1>
                             </div>
                         </div>
-                        <div class="card">
+                        <div>
                             <div class="p-1 card-body">
-                                <div class="text-center"><img src="public/assets/assets/img/gambar1"
+                                <div class="text-center"><img src=" {{ url('assets') }}/assets/img/gambar-3.png"
                                         class="img-fluid py-5" alt="Page Not Found"></div>
                                 <h5 class="mt-3 card-title text-center">Data tidak tersedia</h5>
                             </div>

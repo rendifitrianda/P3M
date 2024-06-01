@@ -53,17 +53,17 @@
                     </a>
                 </li>
                 <li>
-                    <a href="tables-data.html">
+                    <a href="cari akun">
                         <i class="bi bi-circle"></i><span>Cari Akun</span>
                     </a>
                 </li>
                 <li>
-                    <a href="tables-general.html">
+                    <a href="singkronasi prodi">
                         <i class="bi bi-circle"></i><span>Singkronasi Prodi</span>
                     </a>
                 </li>
                 <li>
-                    <a href="tables-data.html">
+                    <a href="singkronasi dosen">
                         <i class="bi bi-circle"></i><span>Singkronasi Dosen</span>
                     </a>
                 </li>

@@ -44,9 +44,9 @@
                                 </thead>
                                 <tbody></tbody>
                             </table>
-                            <div class="text-center"><img src="/static/media/notfound.bb73258a.svg" class="w-25"
-                                    alt="Not Found">
-                                <h5 class="mt-3">Data tidak tersedia</h5>
+                            <div class="text-center"><img src=" {{ url('assets') }}/assets/img/gambar-3.png"
+                                    class="w-25" alt="Not Found">
+                                <h5 class="mt-3 card-title text-center">Data tidak tersedia</h5>
                             </div>
                         </div>
                     </div>

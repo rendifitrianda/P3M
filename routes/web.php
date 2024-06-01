@@ -37,6 +37,18 @@ Route::get('profile lembaga', function () {
     return view('frontend.data_pendukung.profile_lembaga');
 });
 
+Route::get('cari akun', function () {
+    return view('frontend.data_pendukung.cari_akun');
+});
+
+Route::get('singkronasi prodi', function () {
+    return view('frontend.data_pendukung.singkronasi_prodi');
+});
+
+Route::get('singkronasi dosen', function () {
+    return view('frontend.data_pendukung.singkronasi_dosen');
+});
+
 
 
 Route::get('admin/opt', [OptController::class, 'index']);
