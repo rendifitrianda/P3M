@@ -63,7 +63,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="singkronasi dosen">
+                    <a href="singkronasi">
                         <i class="bi bi-circle"></i><span>Singkronasi Dosen</span>
                     </a>
                 </li>

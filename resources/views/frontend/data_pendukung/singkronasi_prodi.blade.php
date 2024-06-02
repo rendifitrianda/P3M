@@ -12,10 +12,11 @@
                             </div>
                             <div class="d-flex gap-1 pb-5 col-md-5"><input type="text" class="form-control"
                                     placeholder="Cari Kode Prodi" value=""><button
-                                    class="btn btn-primary btn-block" disabled="">Cek</button></div>
-                            <div class="text-center"><img src="/static/media/notfound.bb73258a.svg" class="w-25"
-                                    alt="Not Found">
-                                <h5 class="mt-3">Silakan cari kode prodi, untuk menambahkan prodi</h5>
+                                    class="btn btn-primary btn-block" disabled="">Cek</button>
+                            </div>
+                            <div class="text-center">
+                                <img src=" {{ url('assets') }}/assets/img/gambar-3.png" class="w-25" alt="Not Found">
+                                <h5 class="mt-3 card-title text-center">Data tidak tersedia</h5>
                             </div>
                         </div>
                     </div>
