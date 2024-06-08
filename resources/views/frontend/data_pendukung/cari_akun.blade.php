@@ -17,11 +17,11 @@
                                 </div>
                             </div>
                             <div class="my-3 card">
-                                <div class="bg-primary bg-soft">
+                                <div style="background-color: rgb(85, 85, 255)">
                                     <div class="row" style="height: 100px;">
                                         <div class="col-8">
-                                            <div class="text-primary p-3">
-                                                <h5 class="text-primary bold">Nama</h5>
+                                            <div class="text-black p-3">
+                                                <h5 class="text-black bold">Nama</h5>
                                                 <p class="mb-0">Program Studi</p>
                                             </div>
                                         </div>

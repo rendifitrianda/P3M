@@ -9,31 +9,32 @@
         </li><!-- End Dashboard Nav -->
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-laptop"></i><span>Monitoring</span><i class="bi bi-chevron-down ms-auto"></i>
+                <i class="bi bi-layout-text-window-reverse"></i><span>Penelitian</span><i
+                    class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="reguler">
+                    <a href="usulan_baru_dosen">
                         <i class="bi bi-circle"></i><span>Usulan Baru</span>
                     </a>
                 </li>
                 <li>
-                    <a href="perbaikan usulan">
+                    <a href="perbaikan_usulan_dosen">
                         <i class="bi bi-circle"></i><span>Perbaikan Usulan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="laporan kemajuan">
-                        <i class="bi bi-circle"></i><span>Laporan Kemajuan</span>
+                    <a href="laporan_kemajuan_dosen">
+                        <i class="bi bi-circle"></i><span>laporan kemajuan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="laporan akhir">
+                    <a href="laporan_akhir_dosen">
                         <i class="bi bi-circle"></i><span>Laporan Akhir</span>
                     </a>
                 </li>
                 <li>
-                    <a href="catatan harian">
+                    <a href="catatan_harian_dosen">
                         <i class="bi bi-circle"></i><span>Catatan Harian</span>
                     </a>
                 </li>
@@ -42,28 +43,32 @@
         <!-- End Tables Nav -->
         <li class="nav-item">
             <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
-                <i class="bi bi-layout-text-window-reverse"></i><span>Data Pendukung</span><i
-                    class="bi bi-chevron-down ms-auto"></i>
+                <i class="ri-layout-line"></i><span>Pengabdian</span><i class="bi bi-chevron-down ms-auto"></i>
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="profile lembaga">
-                        <i class="bi bi-circle"></i><span>Profile lembaga</span>
+                    <a href="usulan_baru">
+                        <i class="bi bi-circle"></i><span>Usulan Baru</span>
                     </a>
                 </li>
                 <li>
-                    <a href="cari akun">
-                        <i class="bi bi-circle"></i><span>Cari Akun</span>
+                    <a href="perbaikan_usulan_dosen">
+                        <i class="bi bi-circle"></i><span>Perbaikan Usulan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="singkronasi prodi">
-                        <i class="bi bi-circle"></i><span>Singkronasi Prodi</span>
+                    <a href="laporan_kemajuan_dosen">
+                        <i class="bi bi-circle"></i><span>Laporan Kemajuan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="singkronasi dosen">
-                        <i class="bi bi-circle"></i>Singkronasi Dosen</span>
+                    <a href="laporan_akhir_dosen">
+                        <i class="bi bi-circle"></i><span>Laporan Akhir</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="catatan_harian_dosen">
+                        <i class="bi bi-circle"></i><span>Catatan Harian</span>
                     </a>
                 </li>
             </ul>

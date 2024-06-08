@@ -51,4 +51,37 @@ Route::get('singkronasi dosen', function () {
 
 
 
+// HAK AKSES DOSEN
+
+
+Route::get('edit_dosen', function () {
+    return view('frontend.data_pendukung.edit_dosen');
+});
+
+Route::get('usulan_baru_dosen', function () {
+    return view('layout.penelitian.usulan_baru');
+});
+
+Route::get('perbaikan_usulan_dosen', function () {
+    return view('layout.penelitian.perbaikan_usulan');
+});
+
+Route::get('laporan_kemajuan_dosen', function () {
+    return view('layout.penelitian.laporan_kemajuan');
+});
+
+Route::get('laporan_akhir_dosen', function () {
+    return view('layout.penelitian.laporan_akhir');
+});
+
+Route::get('catatan_harian_dosen', function () {
+    return view('layout.penelitian.catatan_harian');
+});
+
+Route::get('usulan_baru', function () {
+    return view('layout.pengabdian.usulan_baru');
+});
+
+
+
 Route::get('admin/opt', [OptController::class, 'index']);

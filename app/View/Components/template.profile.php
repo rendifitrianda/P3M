@@ -6,7 +6,7 @@ use Closure;
 use Illuminate\View\Component;
 use Illuminate\Contracts\View\View;
 
-class template.profile extends Component
+class template extends Component
 {
     /**
      * Create a new component instance.

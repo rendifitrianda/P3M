@@ -3,8 +3,10 @@
 
      <div class="d-flex align-items-center justify-content-between">
          <a href="index.html" class="logo d-flex align-items-center">
-             <img src="{{ url('assets') }}/assets/img/logo.png" alt="">
-             <span class="d-none d-lg-block" style="color: white">P3M</span>
+             <div class="margin-right: 20px;">
+                 <img src="{{ url('assets') }}/assets/img/logo-7.png" style="scale: 1.8">
+             </div>
+             <span class="d-none d-lg-block" style="color: white">P3KM</span>
          </a>
          <i class="bi bi-list toggle-sidebar-btn" style="color: white"></i>
      </div><!-- End Logo -->
@@ -45,5 +47,5 @@
              </ul>
          </div>
      </span> --}}
-     <x-template.profile />
+     <x-template2.profile />
  </header><!-- End Header -->
