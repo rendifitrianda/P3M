@@ -61,7 +61,8 @@
                                                         <div class="d-flex justify-content-center align-item-center">
                                                             <button type="button"
                                                                 class="btn btn-outline-info btn-sm"><i
-                                                                    class="fa fa-eye"></i></button></div>
+                                                                    class="fa fa-eye"></i></button>
+                                                        </div>
                                                     </td>
                                                 </tr>
                                                 <tr class="">

@@ -13,6 +13,8 @@ Route::get('testione', function () {
     return view('components.app');
 });
 
+//HAK AKSES OPT
+
 Route::get('reguler', function () {
     return view('frontend.opt.usulan_reguler');
 });
@@ -80,6 +82,22 @@ Route::get('catatan_harian_dosen', function () {
 
 Route::get('usulan_baru', function () {
     return view('layout.pengabdian.usulan_baru');
+});
+
+Route::get('perbaikan_usulan', function () {
+    return view('layout.pengabdian.perbaikan_usulan');
+});
+
+Route::get('laporan_kemajuan', function () {
+    return view('layout.pengabdian.laporan_kemajuan');
+});
+
+Route::get('laporan_akhir', function () {
+    return view('layout.pengabdian.laporan_akhir');
+});
+
+Route::get('catatan_harian', function () {
+    return view('layout.pengabdian.catatan_harian');
 });
 
 

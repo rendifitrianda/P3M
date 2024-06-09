@@ -30,7 +30,7 @@
                 </li>
                 <li>
                     <a href="laporan_akhir_dosen">
-                        <i class="bi bi-circle"></i><span>Laporan Akhir</span>
+                        <i class="bi bi-circle"></i><span>Laporan Akhir</span>k
                     </a>
                 </li>
                 <li>
@@ -52,22 +52,22 @@
                     </a>
                 </li>
                 <li>
-                    <a href="perbaikan_usulan_dosen">
+                    <a href="perbaikan_usulan">
                         <i class="bi bi-circle"></i><span>Perbaikan Usulan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="laporan_kemajuan_dosen">
+                    <a href="laporan_kemajuan">
                         <i class="bi bi-circle"></i><span>Laporan Kemajuan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="laporan_akhir_dosen">
+                    <a href="laporan_akhir">
                         <i class="bi bi-circle"></i><span>Laporan Akhir</span>
                     </a>
                 </li>
                 <li>
-                    <a href="catatan_harian_dosen">
+                    <a href="catatan_harian">
                         <i class="bi bi-circle"></i><span>Catatan Harian</span>
                     </a>
                 </li>
