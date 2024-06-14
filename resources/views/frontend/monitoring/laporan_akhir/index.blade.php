@@ -2,7 +2,6 @@
     <div class="main-content">
         <div class="page-content">
             <div class="container-fluid">
-
                 <div class="row">
                     <div class="mb-3 col-md-6">
                         <h4 class="text-uppercase font-size-20 card-title">Laporan Akhir</h4>

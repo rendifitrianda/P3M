@@ -2,7 +2,7 @@
 <aside id="sidebar" class="sidebar">
     <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-            <a class="nav-link collapsed" href="index.html">
+            <a class="nav-link collapsed" href="">
                 <i class="ri-dashboard-line"></i>
                 <span>Dashboard</span>
             </a>
@@ -14,7 +14,7 @@
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="usulan_baru_dosen">
+                    <a href="usulan_baru">
                         <i class="bi bi-circle"></i><span>Usulan Baru</span>
                     </a>
                 </li>
@@ -30,7 +30,7 @@
                 </li>
                 <li>
                     <a href="laporan_akhir_dosen">
-                        <i class="bi bi-circle"></i><span>Laporan Akhir</span>k
+                        <i class="bi bi-circle"></i><span>Laporan Akhir</span>
                     </a>
                 </li>
                 <li>
