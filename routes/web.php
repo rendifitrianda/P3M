@@ -18,6 +18,15 @@ Route::get('testione', function () {
 
 //HAK AKSES OPERATOR
 
+//DASHBOARD
+Route::get('frontend/dashboard', [OptController::class, 'index']);
+
+Route::get('frontend/dashboard/create', [OptController::class, 'create']);
+
+Route::post('frontend/dashboard', [OptController::class, 'store']);
+
+Route::delete('frontend/dashboard/{dosen}', [OptController::class, 'delete']);
+
 //MONITORING
 
 Route::get('reguler', function () {
@@ -68,13 +77,13 @@ Route::get('singkronasi dosen', function () {
 
 // HAK AKSES DOSEN
 
-Route::get('layout/dashboard', [OptController::class, 'index']);
+// Route::get('layout/dashboard', [OptController::class, 'index']);
 
-Route::get('layout/dashboard/create', [OptController::class, 'create']);
+// Route::get('layout/dashboard/create', [OptController::class, 'create']);
 
-Route::post('layout/dashboard', [OptController::class, 'store']);
+// Route::post('layout/dashboard', [OptController::class, 'store']);
 
-Route::delete('layout/dashboard/{dosen}', [OptController::class, 'delete']);
+// Route::delete('layout/dashboard/{dosen}', [OptController::class, 'delete']);
    
 
 //PENELITIAN

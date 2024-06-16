@@ -13,7 +13,7 @@ class OptController extends Controller
     public function index()
     {
         $data['list_dosen'] = Dosen::all();
-        return view('layout.dashboard.index', $data);
+        return view('frontend.dashboard.index', $data);
     }
 
     /**
@@ -21,7 +21,7 @@ class OptController extends Controller
      */
     public function create()
     {
-        return view('layout.dashboard.create');
+        return view('frontend.dashboard.create');
     }
 
     /**
@@ -48,7 +48,7 @@ class OptController extends Controller
 
         // return $dosen;
         // dd($dosen);
-        return redirect('layout/dashboard')->with('create', 'Data Berhasil');
+        return redirect('frontend/dashboard')->with('create', 'Data Berhasil');
     }
 
     /**
@@ -83,6 +83,6 @@ class OptController extends Controller
         $dosen->delete();
      
         
-        return redirect('layout/dashboard');
+        return redirect('frontend/dashboard');
     }
 }

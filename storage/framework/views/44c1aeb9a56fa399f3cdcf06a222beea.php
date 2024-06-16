@@ -1,4 +1,13 @@
-<x-app>
+<?php if (isset($component)) { $__componentOriginal7ae6b45c011e855a5545a671a7f3568e = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal7ae6b45c011e855a5545a671a7f3568e = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.app','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('app'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
     <div class="card">
         <div class="content-header">
             <div class="container-fluid">
@@ -15,8 +24,8 @@
         <section class="content">
             <div class="container-fluid">
                 <div class="card-body">
-                    <form action="{{ url('frontend/dashboard') }}" method="POST">
-                        @csrf
+                    <form action="<?php echo e(url('frontend/dashboard')); ?>" method="POST">
+                        <?php echo csrf_field(); ?>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -116,7 +125,7 @@
                                 </div>
                             </div>
                             <div class="col-md-12 mt-4 ">
-                                {{-- <x-button.simpan id="simpan" /> --}}
+                                
                                 <button class="btn btn-primary"> <i class="fa fa-save"></i>Simpan</button>
                             </div>
                         </div>
@@ -125,4 +134,14 @@
             </div>
         </section>
     </div>
-</x-app>
+ <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal7ae6b45c011e855a5545a671a7f3568e)): ?>
+<?php $attributes = $__attributesOriginal7ae6b45c011e855a5545a671a7f3568e; ?>
+<?php unset($__attributesOriginal7ae6b45c011e855a5545a671a7f3568e); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal7ae6b45c011e855a5545a671a7f3568e)): ?>
+<?php $component = $__componentOriginal7ae6b45c011e855a5545a671a7f3568e; ?>
+<?php unset($__componentOriginal7ae6b45c011e855a5545a671a7f3568e); ?>
+<?php endif; ?>
+<?php /**PATH C:\laragon\www\P3M\resources\views/frontend/dashboard/create.blade.php ENDPATH**/ ?>
