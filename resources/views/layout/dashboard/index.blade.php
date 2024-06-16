@@ -1,4 +1,4 @@
-<x-starter>
+<x-app>
     <section class="content">
         <div class="container-fluid">
             <div class="row mb-4">
@@ -8,6 +8,8 @@
                             <i class="fas fa-info">Tambah Data</i>
                         </a>
                     </div>
+
+                    <x-button.simpan />
                 </div>
                 @csrf
                 <div class="mb-5 row">
@@ -24,16 +26,10 @@
                                                 <th scope="col">Action</th>
                                                 <th scope="col">Nama</th>
                                                 <th scope="col">Alamat</th>
-                                                {{-- <th scope="col">Klaster</th>~ --}}
-                                                <th scope="col">Program Studi</th>
                                                 <th scope="col">Tempat Lahir</th>
                                                 <th scope="col">Tgl Lahir</th>
-                                                {{-- <th scope="col">Nomor Ktp</th> --}}
+                                                <th scope="col">Program Studi</th>
                                                 <th scope="col">Jabatan Akademik</th>
-                                                <th scope="col">Nomor Hp</th>
-                                                {{-- <th scope="col">Alamat Surel</th> --}}
-                                                {{-- <th scope="col">Jenjang Pendidikan</th> --}}
-                                                {{-- <th scope="col">Website Personal</th> --}}
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -51,21 +47,15 @@
                                                                 class="btn btn-warning">
                                                                 <i class="ri-edit-circle-line"></i>
                                                             </a>
-                                                            {{-- <x-button.delete id="{{ $date->id }}" /> --}}
+                                                            <x-button.delete id="{{ $dosen->id }}" />
                                                         </div>
                                                     </td>
                                                     <td>{{ $dosen->nama }}</td>
                                                     <td>{{ $dosen->alamat }}</td>
-                                                    {{-- <td>{{ $dosen->klaster }}</td> --}}
-                                                    <td>{{ $dosen->program_studi }}</td>
                                                     <td>{{ $dosen->tempat_lahir }}</td>
                                                     <td>{{ $dosen->tanggal_lahir }}</td>
-                                                    {{-- <td>{{ $dosen->nomor_ktp }}</td> --}}
+                                                    <td>{{ $dosen->program_studi }}</td>
                                                     <td>{{ $dosen->jabatan_akademik }}</td>
-                                                    <td>{{ $dosen->nomor_hp }}</td>
-                                                    {{-- <td>{{ $dosen->alamat_surel }}</td> --}}
-                                                    {{-- <td>{{ $dosen->jenjang_pendidikan }}</td> --}}
-                                                    {{-- <td>{{ $dosen->website_personal }}</td> --}}
                                                 </tr>
                                             @endforeach
                                         </tbody>
@@ -79,4 +69,4 @@
             </div>
         </div>
     </section>
-</x-starter>
+</x-app>

@@ -73,11 +73,9 @@ Route::get('layout/dashboard', [OptController::class, 'index']);
 Route::get('layout/dashboard/create', [OptController::class, 'create']);
 
 Route::post('layout/dashboard', [OptController::class, 'store']);
-   
 
-// Route::post('dashboard.store', function () {
-//     return view('layout/dashboard', [DashboardController::class, 'store']);
-// });
+Route::delete('layout/dashboard/{dosen}', [OptController::class, 'delete']);
+   
 
 //PENELITIAN
 

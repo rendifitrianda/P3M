@@ -1,12 +1,12 @@
-<button class="btn btn-danger" type="button" onclick="deleteData('{{ $id }}',  '{{ $path }}')">
+<button class="btn btn-danger" type="button" onclick="deleteData('<?php echo e($id); ?>',  '<?php echo e($path); ?>')">
     <i class="ri-chat-delete-line"></i></button>
 
-@push('script')
-    @once
+<?php $__env->startPush('script'); ?>
+    <?php if (! $__env->hasRenderedOnce('601230f1-2dcf-4f47-8a31-e15e6296ec1e')): $__env->markAsRenderedOnce('601230f1-2dcf-4f47-8a31-e15e6296ec1e'); ?>
         <script>
             const deleteData = (id, path) => {
-                const base_url = '{{ url('/') }}'
-                const current_url = '{{ url()->current() }}'
+                const base_url = '<?php echo e(url('/')); ?>'
+                const current_url = '<?php echo e(url()->current()); ?>'
                 const url = path ? `${base_url}/${path}/${id}` : `${current_url}/${id}`
                 Swal.fire({
                     title: 'Yakin akan menghapus?',
@@ -18,7 +18,7 @@
                     confirmButtonText: 'Lanjutkan'
                 }).then((result) => {
                     if (result.isConfirmed) {
-                        const csrf_token = `{{ csrf_token() }}`
+                        const csrf_token = `<?php echo e(csrf_token()); ?>`
                         const template = `
                                 <form method="post" action="${url}">
                                     <input type="hidden" name="_token" value="${csrf_token}"/>
@@ -38,5 +38,6 @@
 
             }
         </script>
-    @endonce
-@endpush
+    <?php endif; ?>
+<?php $__env->stopPush(); ?>
+<?php /**PATH C:\laragon\www\P3M\resources\views/components/button/delete.blade.php ENDPATH**/ ?>

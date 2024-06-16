@@ -47,8 +47,8 @@ class OptController extends Controller
         $dosen->save();
 
         // return $dosen;
-
-        return redirect('layout/dashboard')->with('success', 'Data Berhasil');
+        // dd($dosen);
+        return redirect('layout/dashboard')->with('create', 'Data Berhasil');
     }
 
     /**
@@ -78,8 +78,11 @@ class OptController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function delete(Dosen $dosen)
     {
-        //
+        $dosen->delete();
+     
+        
+        return redirect('layout/dashboard');
     }
 }
