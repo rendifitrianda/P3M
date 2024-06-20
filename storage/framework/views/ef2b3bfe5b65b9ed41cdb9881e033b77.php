@@ -115,6 +115,46 @@
 <?php $component = $__componentOriginal40796613eed5d5b325e8ca0a6cec65df; ?>
 <?php unset($__componentOriginal40796613eed5d5b325e8ca0a6cec65df); ?>
 <?php endif; ?>
+    <?php if (isset($component)) { $__componentOriginale9283109fe725d9b601c92d293e04460 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginale9283109fe725d9b601c92d293e04460 = $attributes; } ?>
+<?php $component = App\View\Components\Utils\Notif::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('utils.notif'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\App\View\Components\Utils\Notif::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginale9283109fe725d9b601c92d293e04460)): ?>
+<?php $attributes = $__attributesOriginale9283109fe725d9b601c92d293e04460; ?>
+<?php unset($__attributesOriginale9283109fe725d9b601c92d293e04460); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginale9283109fe725d9b601c92d293e04460)): ?>
+<?php $component = $__componentOriginale9283109fe725d9b601c92d293e04460; ?>
+<?php unset($__componentOriginale9283109fe725d9b601c92d293e04460); ?>
+<?php endif; ?>
+    <?php if (isset($component)) { $__componentOriginalbd10e2144c3e368a5dd8cccc91b516bd = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalbd10e2144c3e368a5dd8cccc91b516bd = $attributes; } ?>
+<?php $component = App\View\Components\Utils\Notif2::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('utils.notif2'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\App\View\Components\Utils\Notif2::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalbd10e2144c3e368a5dd8cccc91b516bd)): ?>
+<?php $attributes = $__attributesOriginalbd10e2144c3e368a5dd8cccc91b516bd; ?>
+<?php unset($__attributesOriginalbd10e2144c3e368a5dd8cccc91b516bd); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalbd10e2144c3e368a5dd8cccc91b516bd)): ?>
+<?php $component = $__componentOriginalbd10e2144c3e368a5dd8cccc91b516bd; ?>
+<?php unset($__componentOriginalbd10e2144c3e368a5dd8cccc91b516bd); ?>
+<?php endif; ?>
     
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i

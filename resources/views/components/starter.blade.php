@@ -19,8 +19,6 @@
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
         rel="stylesheet">
 
-
-
     <!-- Vendor CSS Files -->
     <link href="{{ url('assets') }}/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="{{ url('assets') }}/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
@@ -33,7 +31,6 @@
     <!-- Template Main CSS File -->
     <link href="{{ url('assets') }}/assets/css/style.css" rel="stylesheet">
 
-
     <!-- =======================================================
   * Template Name: NiceAdmin
   * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -41,11 +38,13 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+    @stack('style')
 </head>
 
 <body>
 
-    <x-template2.header />
+    <x-templating.header />
+    <x-templating.sidebar />
 
     <main id="main" class="main">
         <div class="content-wrapper">
@@ -57,8 +56,7 @@
         </div>
         </section>
     </main><!-- End #main -->
-    {{-- <x-template2.profile /> --}}
-    <x-template2.sidebar />
+    {{-- <x-template.profile /> --}}
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
@@ -77,11 +75,11 @@
     <script src="{{ url('assets') }}/assets/js/main.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="assets('resources/js/app.js')"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
 
 
     @stack('script')
-
 </body>
 
 </html>

@@ -8,8 +8,6 @@
                             <i class="fas fa-info">Tambah Data</i>
                         </a>
                     </div>
-
-                    <x-button.simpan />
                 </div>
                 @csrf
                 <div class="mb-5 row">
@@ -43,7 +41,7 @@
                                                                 class="btn btn-info">
                                                                 <i class="ri-file-info-line"></i>
                                                             </a>
-                                                            <a href="{{ url('frontend/dashboard', $dosen->id) }}/edit"
+                                                            <a href="{{ url('frontend/dashboard', $dosen->id) }}"
                                                                 class="btn btn-warning">
                                                                 <i class="ri-edit-circle-line"></i>
                                                             </a>

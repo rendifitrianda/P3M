@@ -25,6 +25,10 @@ Route::get('frontend/dashboard/create', [OptController::class, 'create']);
 
 Route::post('frontend/dashboard', [OptController::class, 'store']);
 
+Route::get('frontend/dashboard/{dosen}', [OptController::class, 'edit']);
+
+Route::post('frontend/dashboard/{dosen}', [OptController::class, 'update']);
+
 Route::delete('frontend/dashboard/{dosen}', [OptController::class, 'delete']);
 
 //MONITORING

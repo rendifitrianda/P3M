@@ -57,6 +57,8 @@
         </section>
     </main><!-- End #main -->
     <x-template.footer />
+    <x-utils.notif />
+    <x-utils.notif2 />
     {{-- <x-template.profile /> --}}
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i

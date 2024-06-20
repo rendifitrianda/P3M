@@ -17,27 +17,6 @@
                             <i class="fas fa-info">Tambah Data</i>
                         </a>
                     </div>
-
-                    <?php if (isset($component)) { $__componentOriginal6e447330351c42cb665759f2c062d23a = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal6e447330351c42cb665759f2c062d23a = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button.simpan','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('button.simpan'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
-<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
-<?php endif; ?>
-<?php $component->withAttributes([]); ?>
-<?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__attributesOriginal6e447330351c42cb665759f2c062d23a)): ?>
-<?php $attributes = $__attributesOriginal6e447330351c42cb665759f2c062d23a; ?>
-<?php unset($__attributesOriginal6e447330351c42cb665759f2c062d23a); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginal6e447330351c42cb665759f2c062d23a)): ?>
-<?php $component = $__componentOriginal6e447330351c42cb665759f2c062d23a; ?>
-<?php unset($__componentOriginal6e447330351c42cb665759f2c062d23a); ?>
-<?php endif; ?>
                 </div>
                 <?php echo csrf_field(); ?>
                 <div class="mb-5 row">
@@ -71,7 +50,7 @@
                                                                 class="btn btn-info">
                                                                 <i class="ri-file-info-line"></i>
                                                             </a>
-                                                            <a href="<?php echo e(url('frontend/dashboard', $dosen->id)); ?>/edit"
+                                                            <a href="<?php echo e(url('frontend/dashboard', $dosen->id)); ?>"
                                                                 class="btn btn-warning">
                                                                 <i class="ri-edit-circle-line"></i>
                                                             </a>

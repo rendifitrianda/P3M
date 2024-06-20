@@ -48,7 +48,7 @@ class OptController extends Controller
 
         // return $dosen;
         // dd($dosen);
-        return redirect('frontend/dashboard')->with('create', 'Data Berhasil');
+        return redirect('frontend/dashboard')->with('success', 'Data Berhasil di simpan');
     }
 
     /**
@@ -62,17 +62,32 @@ class OptController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Dosen $dosen)
     {
-        //
+        $data['dosen'] = $dosen;
+        return view('frontend.dashboard.edit', $data);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Dosen $dosen)
     {
-        //
+        $dosen->nama = request('nama');
+        $dosen->klaster = request('klaster');
+        $dosen->jenjang_pendidikan = request('jenjang_pendidikan');
+        $dosen->program_studi = request('program_studi');
+        $dosen->nomor_ktp = request('nomor_ktp');
+        $dosen->jabatan_akademik = request('jabatan_akademik');
+        $dosen->alamat = request('alamat');
+        $dosen->tanggal_lahir = request('tanggal_lahir');
+        $dosen->tempat_lahir = request('tempat_lahir');
+        $dosen->nomor_hp = request('nomor_hp');
+        $dosen->alamat_surel = request('alamat_surel');
+        $dosen->website_personal = request('website_personal');
+        $dosen->update();
+
+        return redirect('frontend/dashboard')->with('success1', 'Data Berhasil di simpan');
     }
 
     /**

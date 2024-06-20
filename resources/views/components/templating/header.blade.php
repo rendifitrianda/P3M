@@ -47,5 +47,5 @@
              </ul>
          </div>
      </span> --}}
-     <x-template2.profile />
+     <x-templating.profile />
  </header><!-- End Header -->
