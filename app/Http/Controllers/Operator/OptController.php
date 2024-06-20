@@ -1,9 +1,10 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Operator;
 
 use App\Models\Dosen;
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 
 class OptController extends Controller
 {
@@ -33,6 +34,8 @@ class OptController extends Controller
         
         $dosen = new Dosen;
         $dosen->nama = request('nama');
+        $dosen->nidn = request('nidn');
+        $dosen->institusi = request('institusi');
         $dosen->klaster = request('klaster');
         $dosen->jenjang_pendidikan = request('jenjang_pendidikan');
         $dosen->program_studi = request('program_studi');
@@ -74,6 +77,8 @@ class OptController extends Controller
     public function update(Dosen $dosen)
     {
         $dosen->nama = request('nama');
+        $dosen->nidn = request('nidn');
+        $dosen->institusi = request('institusi');
         $dosen->klaster = request('klaster');
         $dosen->jenjang_pendidikan = request('jenjang_pendidikan');
         $dosen->program_studi = request('program_studi');

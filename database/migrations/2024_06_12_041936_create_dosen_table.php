@@ -14,7 +14,9 @@ return new class extends Migration
         Schema::create('dosen', function (Blueprint $table) {
             $table->id();
             $table->string('nama', 255);
+            $table->string('nidn', 255);
             $table->string('klaster', 255); 
+            $table->string('institusi', 255);
             $table->enum ('jenjang_pendidikan', ['s1', 's2', 's3']); 
             $table->enum ('program_studi', ['teknik_informasi', 'teknik_sipil', 'teknik_elektro', 'teknik_pertambangan', 'teknik_mesin', 'agro_industri', 'tptp', 'tphp',]);  
             $table->string('nomor_ktp', 255);

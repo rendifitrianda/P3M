@@ -2,11 +2,9 @@
 <aside id="sidebar" class="sidebar">
     <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-            <a href="dashbboard">
-                <a class="nav-link collapsed" href="">
-                    <i class="ri-dashboard-line"></i>
-                    <span>Dashboard</span>
-                </a>
+            <a class="nav-link collapsed" href="layout/dashboard">
+                <i class="ri-dashboard-line"></i>
+                <span>Dashboard</span>
             </a>
         </li><!-- End Dashboard Nav -->
         <li class="nav-item">

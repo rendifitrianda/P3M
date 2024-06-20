@@ -3,7 +3,8 @@
 namespace App\Http\Controllers\Admin;
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\OptController;
+use App\Http\Controllers\Operator\OptController;
+use App\Http\Controllers\Dosen\DashboardController;
 
 
 
@@ -81,7 +82,7 @@ Route::get('singkronasi dosen', function () {
 
 // HAK AKSES DOSEN
 
-// Route::get('layout/dashboard', [OptController::class, 'index']);
+Route::get('layout/dashboard', [DashboardController::class, 'index']);
 
 // Route::get('layout/dashboard/create', [OptController::class, 'create']);
 
@@ -92,9 +93,9 @@ Route::get('singkronasi dosen', function () {
 
 //PENELITIAN
 
-Route::get('dashboard', function () {
-    return view('layout.dashboard.index');
-});
+// Route::get('layout/dashboard', function () {
+//     return view('layout.dashboard.index');
+// });
 
 Route::get('edit_dosen', function () {
     return view('frontend.data_pendukung.edit_dosen');

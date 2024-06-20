@@ -45,6 +45,22 @@
                         <div class="row mt-3">
                             <div class="col-md-6">
                                 <div class="form-group">
+                                    <label for="" class="control-label"><b>NIDN/NIDK</b></label>
+                                    <input type="text" name="nidn" value="<?php echo e($dosen->nama); ?>"
+                                        class="form-control"required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="" class="control-label"><b>Institusi</b></label>
+                                    <input type="text" name="institusi" value="<?php echo e($dosen->klaster); ?>"
+                                        class="form-control"required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
                                     <label for="" class="control-label"><b>Jenjang Pendidikan</b></label>
                                     <select name="jenjang_pendidikan" class="form-select  "required>
                                         <option value=""></option>
@@ -59,7 +75,7 @@
                                     <label for="" class="control-label"><b>Program studi</b></label>
                                     <select name="program_studi" class="form-select ">
                                         <option value=""></option>
-                                        <option value="teknik_informasi">Teknik Informasi</option>
+                                        <option value="teknik_informas">Teknik Informasi</option>
                                         <option value="teknik_sipil">Teknik Sipil</option>
                                         <option value="teknik_elektro">Teknik Elektro</option>
                                         <option value="teknik_pertambangan">Teknik Pertambangan</option>

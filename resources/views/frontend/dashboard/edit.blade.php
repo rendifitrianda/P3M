@@ -36,6 +36,22 @@
                         <div class="row mt-3">
                             <div class="col-md-6">
                                 <div class="form-group">
+                                    <label for="" class="control-label"><b>NIDN/NIDK</b></label>
+                                    <input type="text" name="nidn" value="{{ $dosen->nama }}"
+                                        class="form-control"required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="" class="control-label"><b>Institusi</b></label>
+                                    <input type="text" name="institusi" value="{{ $dosen->klaster }}"
+                                        class="form-control"required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
                                     <label for="" class="control-label"><b>Jenjang Pendidikan</b></label>
                                     <select name="jenjang_pendidikan" class="form-select  "required>
                                         <option value=""></option>
