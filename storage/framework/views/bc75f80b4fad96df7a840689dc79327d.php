@@ -1,113 +1,339 @@
-<?php if (isset($component)) { $__componentOriginal7ae6b45c011e855a5545a671a7f3568e = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal7ae6b45c011e855a5545a671a7f3568e = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.app','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('app'); ?>
+<?php if (isset($component)) { $__componentOriginalc852197415d233a452a914d6dce29771 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalc852197415d233a452a914d6dce29771 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.starter','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('starter'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
 <?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-    <section class="content">
-        <div class="container-fluid">
-            <div class="row mb-4">
-                <div class="col-sm-2">
-                    <div class="card-title">
-                        <a href="<?php echo e(url('layout/dashboard/create')); ?>" class="btn btn-primary">
-                            <i class="fas fa-info">Tambah Data</i>
-                        </a>
-                    </div>
+    <div class="card">
+        <div class="card-header">
+            <div class="main-content">
+                <div class="page-content">
+                    <div class="container-fluid">
+                        <div class="row pengusul">
+                            <h4 class="text-bold font-size-16 text-uppercase"
+                                style="color: rgb(73, 80, 87); font-weight: bold;">
+                                Dashboard Pengusul</h4>
+                            <form action="<?php echo e(url('dashboard')); ?>" method="get">
 
-                    <?php if (isset($component)) { $__componentOriginal6e447330351c42cb665759f2c062d23a = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal6e447330351c42cb665759f2c062d23a = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.button.simpan','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('button.simpan'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
-<?php $attributes = $attributes->except(\Illuminate\View\AnonymousComponent::ignoredParameterNames()); ?>
-<?php endif; ?>
-<?php $component->withAttributes([]); ?>
-<?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__attributesOriginal6e447330351c42cb665759f2c062d23a)): ?>
-<?php $attributes = $__attributesOriginal6e447330351c42cb665759f2c062d23a; ?>
-<?php unset($__attributesOriginal6e447330351c42cb665759f2c062d23a); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginal6e447330351c42cb665759f2c062d23a)): ?>
-<?php $component = $__componentOriginal6e447330351c42cb665759f2c062d23a; ?>
-<?php unset($__componentOriginal6e447330351c42cb665759f2c062d23a); ?>
-<?php endif; ?>
-                </div>
-                <?php echo csrf_field(); ?>
-                <div class="mb-5 row">
-                    <div class="col-md-12">
-                        <div class="card">
-                            <div class="card-body">
-
-                                <!-- Default Table -->
-                                <div class="table-responsive ">
-                                    <table class="table">
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">No</th>
-                                                <th scope="col">Action</th>
-                                                <th scope="col">Nama</th>
-                                                <th scope="col">Alamat</th>
-                                                <th scope="col">Tempat Lahir</th>
-                                                <th scope="col">Tgl Lahir</th>
-                                                <th scope="col">Program Studi</th>
-                                                <th scope="col">Jabatan Akademik</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <?php $__currentLoopData = $list_dosen; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $dosen): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
-                                                <tr>
-                                                    <td><?php echo e($loop->iteration); ?></td>
-
-                                                    <td>
-                                                        <div class="btn-group">
-                                                            <a href="<?php echo e(url('layout/dashboard', $dosen->id)); ?>"
-                                                                class="btn btn-info">
-                                                                <i class="ri-file-info-line"></i>
-                                                            </a>
-                                                            <a href="<?php echo e(url('layout/dashboard', $dosen->id)); ?>/edit"
-                                                                class="btn btn-warning">
-                                                                <i class="ri-edit-circle-line"></i>
-                                                            </a>
-                                                            <?php if (isset($component)) { $__componentOriginalec24a1d3733c1f4eaf5690893195cfcb = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginalec24a1d3733c1f4eaf5690893195cfcb = $attributes; } ?>
-<?php $component = App\View\Components\Button\Delete::resolve(['id' => ''.e($dosen->id).''] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('button.delete'); ?>
-<?php if ($component->shouldRender()): ?>
-<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
-<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
-<?php $attributes = $attributes->except(\App\View\Components\Button\Delete::ignoredParameterNames()); ?>
-<?php endif; ?>
-<?php $component->withAttributes([]); ?>
-<?php echo $__env->renderComponent(); ?>
-<?php endif; ?>
-<?php if (isset($__attributesOriginalec24a1d3733c1f4eaf5690893195cfcb)): ?>
-<?php $attributes = $__attributesOriginalec24a1d3733c1f4eaf5690893195cfcb; ?>
-<?php unset($__attributesOriginalec24a1d3733c1f4eaf5690893195cfcb); ?>
-<?php endif; ?>
-<?php if (isset($__componentOriginalec24a1d3733c1f4eaf5690893195cfcb)): ?>
-<?php $component = $__componentOriginalec24a1d3733c1f4eaf5690893195cfcb; ?>
-<?php unset($__componentOriginalec24a1d3733c1f4eaf5690893195cfcb); ?>
-<?php endif; ?>
+                            </form>
+                            <div class="col-sm-12">
+                                <div class="pengusul_overlay p-5 text-center bg-image rounded-3"
+                                    style="background-image: url(&quot;/static/media/jumbotron-biru.914d0c2a.svg&quot;);">
+                                    <div class="mask text-white">
+                                        <div class="d-flex justify-content-start align-items-center h-100">
+                                            <p class="font-size-14 text-white text-left" style="font-weight: 400;">Anda
+                                                dapat
+                                                mengajukan usulan <br>terkait dengan layanan berikut :</p>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="pengusul_wrapper d-flex align-items-center justify-content-center gap-3">
+                                        <a class="card pengusul_card mini-stats-wid px-1 py-1 px-sm-5 py-sm-3"
+                                            href="/penelitian/usulan/v2">
+                                            <div class="pengusul_card_body card-body mt-3">
+                                                <div class="d-flex text-primary gap-2 align-items-center"
+                                                    style="font-weight: bold;"><i
+                                                        class="bx bx-search-alt-2 font-size-24 text-primary"></i>Penelitian
+                                                </div>
+                                            </div>
+                                        </a><a class="card pengusul_card mini-stats-wid px-1 py-1 px-sm-5 py-sm-3"
+                                            href="/pengabdian/usulan/v2">
+                                            <div class="pengusul_card_body card-body mt-3">
+                                                <div class="d-flex text-primary gap-2 align-items-center"
+                                                    style="font-weight: bold;"><i
+                                                        class="bx bx-star font-size-24 text-primary"></i>Pengabdian
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4 class="text-primary text-uppercase font-size-12 mb-4 ">Status usulan terakhir</h4>
+                            <div class="col-lg-12">
+                                <div class="card card-body">
+                                    <div class="row">
+                                        <div class="mx-auto col-lg-10">
+                                            <div class="h3 mt-0 font-size-12 mb-1 card-title">Usulan Penelitian</div>
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <h3 class="font-size-14 mb-4 text-truncate"
+                                                        style="font-weight: bold; color: rgb(73, 80, 87);">Pemetaan
+                                                        Wilayah
+                                                        Rawan Banjir Menggunakan Sistem Informasi Geografis Dalam
+                                                        Mitigasi
+                                                        Bencana di Kabupaten Ketapang</h3>
+                                                </div>
+                                            </div>
+                                            <div class="wizard">
+                                                <div class="wizard-steps-wrapper">
+                                                    <div class="wizard-steps completed">
+                                                        <div class="wizard-steps-dot"><i class="fa fa-check"></i></div>
+                                                        <div class="wizard-steps-line first"></div>
+                                                        <div class="wizard-steps-line second"></div>
+                                                        <div>
+                                                            <div><label class="text-primary font-size-12 mb-0 ">Tahapan
+                                                                    Seleksi/Usulan</label></div>
+                                                            <div><label class="text-muted block font-size-10">-</label>
+                                                            </div>
                                                         </div>
-                                                    </td>
-                                                    <td><?php echo e($dosen->nama); ?></td>
-                                                    <td><?php echo e($dosen->alamat); ?></td>
-                                                    <td><?php echo e($dosen->tempat_lahir); ?></td>
-                                                    <td><?php echo e($dosen->tanggal_lahir); ?></td>
-                                                    <td><?php echo e($dosen->program_studi); ?></td>
-                                                    <td><?php echo e($dosen->jabatan_akademik); ?></td>
-                                                </tr>
-                                            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
-                                        </tbody>
-                                    </table>
-                                    <!-- End Default Table Example -->
+                                                    </div>
+                                                    <div class="wizard-steps completed">
+                                                        <div class="wizard-steps-dot"><i class="fa fa-check"></i></div>
+                                                        <div class="wizard-steps-line first"></div>
+                                                        <div class="wizard-steps-line second"></div>
+                                                        <div>
+                                                            <div><label class="text-primary font-size-12 mb-0 ">Tahapan
+                                                                    Pelaksanaan Kegiatan</label></div>
+                                                            <div><label class="text-muted block font-size-10">-</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wizard-steps completed">
+                                                        <div class="wizard-steps-dot"><i class="fa fa-check"></i></div>
+                                                        <div class="wizard-steps-line first"></div>
+                                                        <div class="wizard-steps-line second"></div>
+                                                        <div>
+                                                            <div><label class="text-primary font-size-12 mb-0 ">Tahapan
+                                                                    Seleksi
+                                                                    Lanjutan</label></div>
+                                                            <div><label class="text-muted block font-size-10">-</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="wizard-steps completed">
+                                                        <div class="wizard-steps-dot"><i class="fa fa-check"></i></div>
+                                                        <div class="wizard-steps-line first"></div>
+                                                        <div class="wizard-steps-line second"></div>
+                                                        <div>
+                                                            <div><label class="text-primary font-size-12 mb-0 ">Tahapan
+                                                                    Pasca
+                                                                    Pelaksanaan Kegiatan</label></div>
+                                                            <div><label
+                                                                    class="text-muted block font-size-10">21-04-2024</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h5 class="text-primary font-size-14 text-uppercase">profil anda</h5>
+                            <div class="col-md-6 col-lg-4"><a href="/identitas">
+                                    <div class="mini-stats-wid card">
+                                        <div class="menu_profile_items card-body">
+                                            <div class="d-flex">
+                                                <div class="flex-grow-1">
+                                                    <p class="text-muted fw-medium menu_profile_title">Identitas</p>
+                                                    <h4 class="mb-0 menu_profile_desc">DARMANTO</h4>
+                                                </div>
+                                                <div class="icon" style="font-size: 50px;">
+                                                    <i class="ri-account-circle-line"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-md-6 col-lg-4"><a href="/riwayat-penelitian">
+                                    <div class="mini-stats-wid card">
+                                        <div class="menu_profile_items card-body">
+                                            <div class="d-flex">
+                                                <div class="flex-grow-1">
+                                                    <p class="text-muted fw-medium menu_profile_title">Penelitian</p>
+                                                    <h4 class="mb-0 menu_profile_desc">2</h4>
+                                                </div>
+                                                <div class="icon" style="font-size: 50px;">
+                                                    <i class="ri-account-circle-line"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-md-6 col-lg-4"><a href="/riwayat-pengabdian">
+                                    <div class="mini-stats-wid card">
+                                        <div class="menu_profile_items card-body">
+                                            <div class="d-flex">
+                                                <div class="flex-grow-1">
+                                                    <p class="text-muted fw-medium menu_profile_title">Pengabdian</p>
+                                                    <h4 class="mb-0 menu_profile_desc">0</h4>
+                                                </div>
+                                                <div class="icon" style="font-size: 50px;">
+                                                    <i class="ri-account-circle-line"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mini-stats-wid card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium menu_profile_title">Artikel pada Jurnal
+                                                    Internasional Bereputasi</p>
+                                                <h4 class="mb-0 menu_profile_desc">0</h4>
+                                            </div>
+                                            <div class="icon" style="font-size: 50px;">
+                                                <i class="ri-account-circle-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4"><a href="/sinta">
+                                    <div class="mini-stats-wid card">
+                                        <div class="menu_profile_items card-body">
+                                            <div class="d-flex">
+                                                <div class="flex-grow-1">
+                                                    <p class="text-muted fw-medium menu_profile_title">Sinta Skor
+                                                        Overall</p>
+                                                    <h4 class="mb-0 menu_profile_desc">124</h4>
+                                                </div>
+                                                <div class="icon" style="font-size: 50px;">
+                                                    <i class="ri-account-circle-line"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a></div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mini-stats-wid card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium menu_profile_title">HKI</p>
+                                                <h4 class="mb-0 menu_profile_desc">3</h4>
+                                            </div>
+                                            <div class="icon" style="font-size: 50px;">
+                                                <i class="ri-account-circle-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mini-stats-wid card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium menu_profile_title">Buku</p>
+                                                <h4 class="mb-0 menu_profile_desc">1</h4>
+                                            </div>
+                                            <div class="icon" style="font-size: 50px;">
+                                                <i class="ri-account-circle-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mini-stats-wid card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium menu_profile_title">Sinta Skor 3Yr</p>
+                                                <h4 class="mb-0 menu_profile_desc">112</h4>
+                                            </div>
+                                            <div class="icon" style="font-size: 50px;">
+                                                <i class="ri-account-circle-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-4">
+                                <div class="mini-stats-wid card">
+                                    <div class="card-body">
+                                        <div class="d-flex">
+                                            <div class="flex-grow-1">
+                                                <p class="text-muted fw-medium menu_profile_title">Scopus H-Index</p>
+                                                <h4 class="mb-0 menu_profile_desc">0</h4>
+                                            </div>
+                                            <div class="icon" style="font-size: 50px;">
+                                                <i class="ri-account-circle-line"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="overflow-hidden card">
+                            <div class="bg-primary bg-soft">
+                                <div class="row" style="height: 100px;">
+                                    <div class="col-8">
+                                        <div class="text-primary p-3">
+                                            <h5 class="text-primary bold">DARMANTO</h5>
+                                            <p class="mb-0">Program Studi Teknologi Informasi</p>
+                                        </div>
+                                    </div>
+                                    <div class="text-right col-4"><img src="/static/media/blank_avatar.b909b106.png"
+                                            alt="" style="height: 100px;">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="pt-0 card-body">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="pt-4">
+                                            <div class="row">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6">
+                                                        <p class="text-muted mb-0">NIDN/NIDK</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">1104079101</h5>
+                                                        <p class="text-muted mb-0">Klaster</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">Kelompok PT Madya
+                                                        </h5>
+                                                        <p class="text-muted mb-0">Institusi</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">Politeknik Negeri
+                                                            Ketapang
+                                                        </h5>
+                                                        <p class="text-muted mb-0">Program Studi</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">Teknologi Informasi
+                                                        </h5>
+                                                        <p class="text-muted mb-0">Jenjang Pendidikan</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">S2</h5>
+                                                        <p class="text-muted mb-0">Jabatan Akademik</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">Asisten Ahli</h5>
+                                                        <p class="text-muted mb-0">Alamat</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary"> Desa Bumi Agung
+                                                        </h5>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <p class="text-muted mb-0">Tempat Tanggal Lahir</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">Ngawi, 04 Juli 1991
+                                                        </h5>
+                                                        <p class="text-muted mb-0">No KTP</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">6209030407910001
+                                                        </h5>
+                                                        <p class="text-muted mb-0">No Telepon</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">-</h5>
+                                                        <p class="text-muted mb-0">No HP</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">+6282254276270</h5>
+                                                        <p class="text-muted mb-0">Alamat Surel</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">
+                                                            darmanto@politap.ac.id</h5>
+                                                        <p class="text-muted mb-0">Website Personal</p>
+                                                        <h5 class="font-size-12 mb-3 text-primary">-</h5>
+                                                    </div>
+                                                </div>
+                                                <div class="text-right col-sm-12">
+                                                    <hr><a class="btn btn-outline-primary " href="/sync-pddikti"><i
+                                                            class="fas fa-sync"></i> Sync PDDIKTI</a> <a
+                                                        class="btn btn-warning " href="/form-identitas"><i
+                                                            class="fas fa-pen"></i> Sunting</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -115,15 +341,16 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+
  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginal7ae6b45c011e855a5545a671a7f3568e)): ?>
-<?php $attributes = $__attributesOriginal7ae6b45c011e855a5545a671a7f3568e; ?>
-<?php unset($__attributesOriginal7ae6b45c011e855a5545a671a7f3568e); ?>
+<?php if (isset($__attributesOriginalc852197415d233a452a914d6dce29771)): ?>
+<?php $attributes = $__attributesOriginalc852197415d233a452a914d6dce29771; ?>
+<?php unset($__attributesOriginalc852197415d233a452a914d6dce29771); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal7ae6b45c011e855a5545a671a7f3568e)): ?>
-<?php $component = $__componentOriginal7ae6b45c011e855a5545a671a7f3568e; ?>
-<?php unset($__componentOriginal7ae6b45c011e855a5545a671a7f3568e); ?>
+<?php if (isset($__componentOriginalc852197415d233a452a914d6dce29771)): ?>
+<?php $component = $__componentOriginalc852197415d233a452a914d6dce29771; ?>
+<?php unset($__componentOriginalc852197415d233a452a914d6dce29771); ?>
 <?php endif; ?>
 <?php /**PATH C:\laragon\www\P3M\resources\views/layout/dashboard/index.blade.php ENDPATH**/ ?>

@@ -92,6 +92,10 @@ Route::get('singkronasi dosen', function () {
 
 //PENELITIAN
 
+Route::get('dashboard', function () {
+    return view('layout.dashboard.index');
+});
+
 Route::get('edit_dosen', function () {
     return view('frontend.data_pendukung.edit_dosen');
 });
