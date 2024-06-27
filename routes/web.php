@@ -26,11 +26,13 @@ Route::get('frontend/dashboard/create', [OptController::class, 'create']);
 
 Route::post('frontend/dashboard', [OptController::class, 'store']);
 
-Route::get('frontend/dashboard/{dosen}', [OptController::class, 'edit']);
+Route::get('frontend/dashboard/edit/{dosen}', [OptController::class, 'edit']);
 
 Route::post('frontend/dashboard/{dosen}', [OptController::class, 'update']);
 
 Route::delete('frontend/dashboard/{dosen}', [OptController::class, 'delete']);
+
+Route::get('frontend/dashboard/show/{dosen}', [OptController::class, 'show']);    
 
 //MONITORING
 
@@ -79,10 +81,14 @@ Route::get('singkronasi dosen', function () {
 });
 
 
-
 // HAK AKSES DOSEN
 
 Route::get('layout/dashboard', [DashboardController::class, 'index']);
+
+// Route::get('layout/dashboard/edit/{dosen}', [DashboardController::class, 'edit']);
+
+// Route::post('layout/dashboard/{dosen}', [DashboardController::class, 'update']);   
+
 
 // Route::get('layout/dashboard/create', [OptController::class, 'create']);
 

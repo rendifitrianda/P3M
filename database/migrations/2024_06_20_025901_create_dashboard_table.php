@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('dashboard', function (Blueprint $table) {
             $table->id();
+            $table->string('nama', 255); 
             $table->string('nidn', 255); 
             $table->string ('klaster', 255); 
             $table->string ('institusi', 255);  

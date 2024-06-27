@@ -1,7 +1,7 @@
-<?php if (isset($component)) { $__componentOriginal7ae6b45c011e855a5545a671a7f3568e = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal7ae6b45c011e855a5545a671a7f3568e = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.app','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('app'); ?>
+<?php if (isset($component)) { $__componentOriginalc852197415d233a452a914d6dce29771 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalc852197415d233a452a914d6dce29771 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.starter','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('starter'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
@@ -14,7 +14,7 @@
                 <div class="row mb-4">
                     <div class="col-sm-3">
                         <div class="card-title">
-                            Edit Data Dosen
+                            Edit Data
                         </div>
                     </div>
                 </div>
@@ -159,12 +159,12 @@
     </div>
  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginal7ae6b45c011e855a5545a671a7f3568e)): ?>
-<?php $attributes = $__attributesOriginal7ae6b45c011e855a5545a671a7f3568e; ?>
-<?php unset($__attributesOriginal7ae6b45c011e855a5545a671a7f3568e); ?>
+<?php if (isset($__attributesOriginalc852197415d233a452a914d6dce29771)): ?>
+<?php $attributes = $__attributesOriginalc852197415d233a452a914d6dce29771; ?>
+<?php unset($__attributesOriginalc852197415d233a452a914d6dce29771); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal7ae6b45c011e855a5545a671a7f3568e)): ?>
-<?php $component = $__componentOriginal7ae6b45c011e855a5545a671a7f3568e; ?>
-<?php unset($__componentOriginal7ae6b45c011e855a5545a671a7f3568e); ?>
+<?php if (isset($__componentOriginalc852197415d233a452a914d6dce29771)): ?>
+<?php $component = $__componentOriginalc852197415d233a452a914d6dce29771; ?>
+<?php unset($__componentOriginalc852197415d233a452a914d6dce29771); ?>
 <?php endif; ?>
-<?php /**PATH C:\laragon\www\P3M\resources\views/frontend/dashboard/edit.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\laragon\www\P3M\resources\views/layout/dashboard/edit.blade.php ENDPATH**/ ?>

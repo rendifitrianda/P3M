@@ -46,11 +46,11 @@
 
                                                     <td>
                                                         <div class="btn-group">
-                                                            <a href="<?php echo e(url('frontend/dashboard', $dosen->id)); ?>"
+                                                            <a href="<?php echo e(url('frontend/dashboard/show', $dosen->id)); ?>"
                                                                 class="btn btn-info">
                                                                 <i class="ri-file-info-line"></i>
                                                             </a>
-                                                            <a href="<?php echo e(url('frontend/dashboard', $dosen->id)); ?>"
+                                                            <a href="<?php echo e(url('frontend/dashboard/edit', $dosen->id)); ?>"
                                                                 class="btn btn-warning">
                                                                 <i class="ri-edit-circle-line"></i>
                                                             </a>

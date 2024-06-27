@@ -24,12 +24,12 @@ class OptController extends Controller
     {
         return view('frontend.dashboard.create');
     }
-
+    
     /**
      * Store a newly created resource in storage.
      */
     public function store(Request $request)
-    
+
     {
         
         $dosen = new Dosen;
@@ -57,9 +57,10 @@ class OptController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Dosen $dosen)
     {
-        //
+        $data['dosen'] = $dosen;
+        return view('frontend.dashboard.show ', $data);
     }
 
     /**

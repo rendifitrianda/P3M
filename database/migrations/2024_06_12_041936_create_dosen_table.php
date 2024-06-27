@@ -17,7 +17,7 @@ return new class extends Migration
             $table->string('nidn', 255);
             $table->string('klaster', 255); 
             $table->string('institusi', 255);
-            $table->enum ('jenjang_pendidikan', ['s1', 's2', 's3']); 
+            $table->enum ('jenjang_pendidikan', ['S1', 'S2', 'S3']); 
             $table->enum ('program_studi', ['teknik_informasi', 'teknik_sipil', 'teknik_elektro', 'teknik_pertambangan', 'teknik_mesin', 'agro_industri', 'tptp', 'tphp',]);  
             $table->string('nomor_ktp', 255);
             $table->string('jabatan_akademik', 255);
