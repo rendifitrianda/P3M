@@ -28,9 +28,11 @@ class OptController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function store()
 
     {
+
+        request()->validate(Dosen::$rule, Dosen::$isi);
         
         $dosen = new Dosen;
         $dosen->nama = request('nama');
@@ -47,6 +49,9 @@ class OptController extends Controller
         $dosen->nomor_hp = request('nomor_hp');
         $dosen->alamat_surel = request('alamat_surel');
         $dosen->website_personal = request('website_personal');
+        $dosen->username = request('username');
+        if(request('password')) $dosen->password = bcrypt(request('password'));
+
         $dosen->save();
 
         // return $dosen;
@@ -75,6 +80,7 @@ class OptController extends Controller
     /**
      * Update the specified resource in storage.
      */
+    
     public function update(Dosen $dosen)
     {
         $dosen->nama = request('nama');
@@ -91,6 +97,8 @@ class OptController extends Controller
         $dosen->nomor_hp = request('nomor_hp');
         $dosen->alamat_surel = request('alamat_surel');
         $dosen->website_personal = request('website_personal');
+        $dosen->username = request('username');
+        if(request('password')) $dosen->password = bcrypt(request('password'));
         $dosen->update();
 
         return redirect('frontend/dashboard')->with('success1', 'Data Berhasil di simpan');

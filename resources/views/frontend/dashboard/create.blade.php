@@ -129,6 +129,21 @@
                                     <input type="text" name="website_personal" class="form-control" required>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="" class="control-label"><b>Username</b></label>
+                                    <input type="text" name="username" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="" class="control-label"><b>Password</b></label>
+                                    <input type="password" name="password" class="form-control"
+                                        aria-placeholder="Masukkan Password Anda">
+                                </div>
+                            </div>
                             <div class="col-md-12 mt-4 ">
                                 {{-- <x-button.simpan id="simpan" /> --}}
                                 <button class="btn btn-primary"> <i class="fa fa-save"></i>Simpan</button>

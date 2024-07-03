@@ -24,7 +24,8 @@
                                                     <option value="2022">2022</option>
                                                     <option value="2021">2021</option>
                                                     <option value="2020">2020</option>
-                                                </select></div>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -46,9 +47,34 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
+                                                @foreach ($list_penelitian_usulan_baru as $penelitian_usulan_baru)
+                                                    <tr>
+                                                        <td>{{ $loop->iteration }}</td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <a href="{{ url('frontend/dashboard/show', $dosen->id) }}"
+                                                                    class="btn btn-info">
+                                                                    <i class="ri-file-info-line"></i>
+                                                                </a>
+                                                                <a href="{{ url('frontend/dashboard/edit', $dosen->id) }}"
+                                                                    class="btn btn-warning">
+                                                                    <i class="ri-edit-circle-line"></i>
+                                                                </a>
+                                                                <x-button.delete
+                                                                    id="{{ $penelitian_usulan_baru->id }}" />
+                                                            </div>
+                                                        </td>
+                                                        <td>{{ $penelitian_usulan_baru->ketua }}</td>
+                                                        <td>{{ $penelitian_usulan_baru->judul }}</td>
+                                                        <td>{{ $penelitian_usulan_baru->tempat_lahir }}</td>
+                                                        <td>{{ $penelitian_usulan_baru->tanggal_lahir }}</td>
+                                                        <td>{{ $penelitian_usulan_baru->program_studi }}</td>
+                                                        <td>{{ $penelitian_usulan_baru->jabatan_akademik }}</td>
+                                                    </tr>
+                                                @endforeach
+                                                {{-- <tr>
                                                     <td colspan="11" class="text-center">Data tidak tersedia!</td>
-                                                </tr>
+                                                </tr> --}}
                                             </tbody>
                                         </table>
                                     </div>

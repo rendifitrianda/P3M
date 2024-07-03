@@ -2,7 +2,7 @@
     <i class="ri-chat-delete-line"></i></button>
 
 <?php $__env->startPush('script'); ?>
-    <?php if (! $__env->hasRenderedOnce('699c36a8-e2f4-46bc-bca0-79226c141bab')): $__env->markAsRenderedOnce('699c36a8-e2f4-46bc-bca0-79226c141bab'); ?>
+    <?php if (! $__env->hasRenderedOnce('91af925b-0218-4111-a5f7-26aad732d5cb')): $__env->markAsRenderedOnce('91af925b-0218-4111-a5f7-26aad732d5cb'); ?>
         <script>
             const deleteData = (id, path) => {
                 const base_url = '<?php echo e(url('/')); ?>'

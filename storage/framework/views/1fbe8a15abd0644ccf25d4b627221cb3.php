@@ -33,7 +33,8 @@
                                                     <option value="2022">2022</option>
                                                     <option value="2021">2021</option>
                                                     <option value="2020">2020</option>
-                                                </select></div>
+                                                </select>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -55,9 +56,50 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <tr>
-                                                    <td colspan="11" class="text-center">Data tidak tersedia!</td>
-                                                </tr>
+                                                <?php $__currentLoopData = $list_penelitian_usulan_baru; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $penelitian_usulan_baru): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                                                    <tr>
+                                                        <td><?php echo e($loop->iteration); ?></td>
+                                                        <td>
+                                                            <div class="btn-group">
+                                                                <a href="<?php echo e(url('frontend/dashboard/show', $dosen->id)); ?>"
+                                                                    class="btn btn-info">
+                                                                    <i class="ri-file-info-line"></i>
+                                                                </a>
+                                                                <a href="<?php echo e(url('frontend/dashboard/edit', $dosen->id)); ?>"
+                                                                    class="btn btn-warning">
+                                                                    <i class="ri-edit-circle-line"></i>
+                                                                </a>
+                                                                <?php if (isset($component)) { $__componentOriginalec24a1d3733c1f4eaf5690893195cfcb = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalec24a1d3733c1f4eaf5690893195cfcb = $attributes; } ?>
+<?php $component = App\View\Components\Button\Delete::resolve(['id' => ''.e($penelitian_usulan_baru->id).''] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('button.delete'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\App\View\Components\Button\Delete::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalec24a1d3733c1f4eaf5690893195cfcb)): ?>
+<?php $attributes = $__attributesOriginalec24a1d3733c1f4eaf5690893195cfcb; ?>
+<?php unset($__attributesOriginalec24a1d3733c1f4eaf5690893195cfcb); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalec24a1d3733c1f4eaf5690893195cfcb)): ?>
+<?php $component = $__componentOriginalec24a1d3733c1f4eaf5690893195cfcb; ?>
+<?php unset($__componentOriginalec24a1d3733c1f4eaf5690893195cfcb); ?>
+<?php endif; ?>
+                                                            </div>
+                                                        </td>
+                                                        <td><?php echo e($penelitian_usulan_baru->ketua); ?></td>
+                                                        <td><?php echo e($penelitian_usulan_baru->judul); ?></td>
+                                                        <td><?php echo e($penelitian_usulan_baru->tempat_lahir); ?></td>
+                                                        <td><?php echo e($penelitian_usulan_baru->tanggal_lahir); ?></td>
+                                                        <td><?php echo e($penelitian_usulan_baru->program_studi); ?></td>
+                                                        <td><?php echo e($penelitian_usulan_baru->jabatan_akademik); ?></td>
+                                                    </tr>
+                                                <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
+                                                
                                             </tbody>
                                         </table>
                                     </div>
