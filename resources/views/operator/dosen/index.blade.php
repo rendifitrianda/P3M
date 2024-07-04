@@ -1,10 +1,10 @@
-<x-app>
+<x-layouts.operator_layouts.app>
     <section class="content">
         <div class="container-fluid">
             <div class="row mb-4">
                 <div class="col-sm-2">
                     <div class="card-title">
-                        <a href="{{ url('frontend/dashboard/create') }}" class="btn btn-primary">
+                        <a href="{{ url('operator/dosen/create') }}" class="btn btn-primary">
                             <i class="fas fa-info">Tambah Data</i>
                         </a>
                     </div>
@@ -37,15 +37,19 @@
 
                                                     <td>
                                                         <div class="btn-group">
-                                                            <a href="{{ url('frontend/dashboard/show', $dosen->id) }}"
+                                                            <a href="{{ url('operator/dosen/show', $dosen->id) }}"
                                                                 class="btn btn-info">
                                                                 <i class="ri-file-info-line"></i>
                                                             </a>
-                                                            <a href="{{ url('frontend/dashboard/edit', $dosen->id) }}"
+                                                            <a href="{{ url('operator/dosen/edit', $dosen->id) }}"
                                                                 class="btn btn-warning">
                                                                 <i class="ri-edit-circle-line"></i>
                                                             </a>
-                                                            <x-button.delete id="{{ $dosen->id }}" />
+                                                            <button class="btn btn-danger" type="button"
+                                                                data-bs-toggle="modal"
+                                                                data-bs-target="#hapus{{ $dosen->id }}">
+                                                                <i class="ri-chat-delete-line"></i>
+                                                            </button>
                                                         </div>
                                                     </td>
                                                     <td>{{ $dosen->nama }}</td>
@@ -55,6 +59,8 @@
                                                     <td>{{ $dosen->program_studi }}</td>
                                                     <td>{{ $dosen->jabatan_akademik }}</td>
                                                 </tr>
+                                                <x-form.delete id="hapus{{ $dosen->id }}"
+                                                    action="{{ url('operator/dosen/delete', $dosen->id) }}" />
                                             @endforeach
                                         </tbody>
                                     </table>
@@ -67,4 +73,4 @@
             </div>
         </div>
     </section>
-</x-app>
+</x-layouts.operator_layouts.app>

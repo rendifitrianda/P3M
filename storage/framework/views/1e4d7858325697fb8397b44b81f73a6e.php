@@ -53,22 +53,22 @@
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="profile lembaga">
+                    <a href="profile_lembaga">
                         <i class="bi bi-circle"></i><span>Profile lembaga</span>
                     </a>
                 </li>
                 <li>
-                    <a href="cari akun">
+                    <a href="cari_akun">
                         <i class="bi bi-circle"></i><span>Cari Akun</span>
                     </a>
                 </li>
                 <li>
-                    <a href="singkronasi prodi">
+                    <a href="singkronasi_prodi">
                         <i class="bi bi-circle"></i><span>Singkronasi Prodi</span>
                     </a>
                 </li>
                 <li>
-                    <a href="singkronasi dosen">
+                    <a href="singkronasi_dosen">
                         <i class="bi bi-circle"></i>Singkronasi Dosen</span>
                     </a>
                 </li>

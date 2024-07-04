@@ -74,11 +74,7 @@
     <!-- Template Main JS File -->
     <script src="{{ url('assets') }}/assets/js/main.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-
-
+    <x-utils.notif />
     @stack('script')
 </body>
 

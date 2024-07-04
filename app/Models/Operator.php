@@ -39,8 +39,6 @@ class Operator extends Authenticatable
         'password.required'=> 'Inputan tidak bole kosong !', 
     ];
     
-
-
-
+    
 }
     

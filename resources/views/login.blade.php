@@ -86,7 +86,7 @@
 
                                         <div class="col-12">
                                             <label for="password" class="form-label">Password</label>
-                                            <div class="input-group ">
+                                            <div class="input-group">
                                                 <span class="input-group-text" id="inputGroupPrepend">
                                                     <i class="bx bx-lock"></i>
                                                 </span>
@@ -100,7 +100,7 @@
                                         </div>
 
                                         <div class="col-12">
-                                            <button class="btn btn-primary w-100" type="submit">Login</button>
+                                            <button class="btn btn-primary w-100" type="submit ">Login</button>
                                         </div>
 
                                     </form>

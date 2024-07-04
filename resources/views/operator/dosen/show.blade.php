@@ -1,4 +1,4 @@
-<x-app>
+<x-layouts.operator_layouts.app>
     <div class="card">
         <div class="pt-4 card-body">
             <div class="row">
@@ -50,4 +50,4 @@
             </div>
         </div>
     </div>
-</x-app>
+</x-layouts.operator_layouts.app>

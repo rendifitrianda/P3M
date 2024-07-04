@@ -113,11 +113,26 @@
     <!-- Template Main JS File -->
     <script src="<?php echo e(url('assets')); ?>/assets/js/main.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-
-
-
+    <?php if (isset($component)) { $__componentOriginale9283109fe725d9b601c92d293e04460 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginale9283109fe725d9b601c92d293e04460 = $attributes; } ?>
+<?php $component = App\View\Components\Utils\Notif::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('utils.notif'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
+<?php $attributes = $attributes->except(\App\View\Components\Utils\Notif::ignoredParameterNames()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginale9283109fe725d9b601c92d293e04460)): ?>
+<?php $attributes = $__attributesOriginale9283109fe725d9b601c92d293e04460; ?>
+<?php unset($__attributesOriginale9283109fe725d9b601c92d293e04460); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginale9283109fe725d9b601c92d293e04460)): ?>
+<?php $component = $__componentOriginale9283109fe725d9b601c92d293e04460; ?>
+<?php unset($__componentOriginale9283109fe725d9b601c92d293e04460); ?>
+<?php endif; ?>
     <?php echo $__env->yieldPushContent('script'); ?>
 </body>
 

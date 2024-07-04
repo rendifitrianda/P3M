@@ -163,7 +163,7 @@
             </div>
         </section>
     </div>
-     <?php echo $__env->renderComponent(); ?>
+ <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginalfc295a45e885bd4bf50b27cf4a5c3753)): ?>
 <?php $attributes = $__attributesOriginalfc295a45e885bd4bf50b27cf4a5c3753; ?>

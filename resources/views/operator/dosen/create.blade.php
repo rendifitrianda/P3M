@@ -154,4 +154,4 @@
             </div>
         </section>
     </div>
-    </x-app>
+</x-layouts.operator_layouts.app>

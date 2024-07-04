@@ -13,7 +13,18 @@
             });
         </script>
     @endif
+    @if (session('danger'))
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error!',
+                    text: '{{ session('success') }}',
+                    confirmButtonText: 'OK'
+                });
+            });
+        </script>
+    @endif
 
-    <!-- Form Anda di sini -->
-    @csrf
+
 @endpush

@@ -13,8 +13,19 @@
             });
         </script>
     <?php endif; ?>
+    <?php if(session('danger')): ?>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Error!',
+                    text: '<?php echo e(session('success')); ?>',
+                    confirmButtonText: 'OK'
+                });
+            });
+        </script>
+    <?php endif; ?>
 
-    <!-- Form Anda di sini -->
-    <?php echo csrf_field(); ?>
+
 <?php $__env->stopPush(); ?>
 <?php /**PATH C:\laragon\www\P3M\resources\views/components/utils/notif.blade.php ENDPATH**/ ?>
