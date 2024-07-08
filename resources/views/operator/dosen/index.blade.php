@@ -31,10 +31,9 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @foreach ($list_dosen as $dosen)
+                                            @foreach ($dosen as $dosen)
                                                 <tr>
                                                     <td>{{ $loop->iteration }}</td>
-
                                                     <td>
                                                         <div class="btn-group">
                                                             <a href="{{ url('operator/dosen/show', $dosen->id) }}"

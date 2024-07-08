@@ -47,5 +47,5 @@
             </ul>
         </div>
     </span> --}}
-     <x-templating.profile />
+     <x-layouts.dosen_layouts.profile />
  </header><!-- End Header -->

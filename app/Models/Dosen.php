@@ -46,6 +46,8 @@ class Dosen extends Authenticatable
         'alamat_surel' => "required",
         'website_personal' => "required",
     ];
+
+    
     static $isi = [
         'nama.required' => "Inputan tidak boleh kosong !",
         'nidn.required' => "Inputan tidak boleh kosong !",

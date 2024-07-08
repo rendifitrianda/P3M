@@ -14,10 +14,12 @@ Route::prefix('/')->group(function(){
     Route::controller(AuthController::class)->group(function () {
         Route::get('/',  'index')->name('login');
         Route::post('/login',  'aksiLogin');
+        Route::get('/logout',  'logout');
     
     });
 
 });
+
 
 // Route::get('welcome', function () {
 //     return view('welcome');
@@ -33,9 +35,15 @@ Route::prefix('operator')->group(function(){
 });
 
 // HAK AKSES DOSEN
-Route::prefix('dosen')->group(function(){
+Route::prefix('dosen')->middleware('auth:dosen')->group(function(){
     include('_route/Dosen.php');
 });
+
+
+// logout dosen
+
+
+
 
 
 

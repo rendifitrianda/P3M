@@ -13,27 +13,27 @@
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="reguler">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Usulan Baru</span>
                     </a>
                 </li>
                 <li>
-                    <a href="perbaikan usulan">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Perbaikan Usulan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="laporan kemajuan">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Laporan Kemajuan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="laporan akhir">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Laporan Akhir</span>
                     </a>
                 </li>
                 <li>
-                    <a href="catatan harian">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Catatan Harian</span>
                     </a>
                 </li>
@@ -47,22 +47,22 @@
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="profile lembaga">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Profile lembaga</span>
                     </a>
                 </li>
                 <li>
-                    <a href="cari akun">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Cari Akun</span>
                     </a>
                 </li>
                 <li>
-                    <a href="singkronasi prodi">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Singkronasi Prodi</span>
                     </a>
                 </li>
                 <li>
-                    <a href="singkronasi dosen">
+                    <a href="">
                         <i class="bi bi-circle"></i>Singkronasi Dosen</span>
                     </a>
                 </li>

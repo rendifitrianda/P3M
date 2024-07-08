@@ -2,50 +2,108 @@
     <div class="main-content">
         <div class="page-content">
             <div class="container-fluid">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h4 class="card-title">Rekap Usulan</h4>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="row mb-3">
-                                    <div class="col-md-12"><label class="font-size-13 mb-1 form-label">
-                                            <h9 class="card-title">Jenis Kegiatan</h9>
-                                        </label><select class="form-select form-select-md">
-                                            <option value="0">Pilih Jenis Kegiatan</option>
-                                            <option value="1">Penelitian</option>
-                                            <option value="2">Pengabdian</option>
-                                            <option value="141">Prototipe</option>
-                                            <option value="143">Kosabangsa</option>
-                                        </select></div>
+                <div class="row">
+                    <div class="col-12 col-md-12">
+                        <div class="card-title">
+                            <h4 class="pb-3">Usulan Penelitian</h4>
+                        </div>
+                        <div class="rounded card">
+                            <div class="card-header">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-md-8 mt-2">
+                                            <div class="card-title">
+                                                <a href="{{ url('dosen/usulan/create') }}" class="btn btn-primary">
+                                                    <i class="fas fa-plus">Tambah Data</i>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="card-title">
+                                                <div class="mb-0 mb-0">
+                                                    <label for="thn_pelaksanaan" class="form-label">Tahun
+                                                        Pelaksanaan
+                                                    </label>
+                                                    <div class="input-group"><button disabled=""
+                                                            class="btn btn-primary disabled"><i
+                                                                class="fa fa-filter"></i></button><select
+                                                            class="form-control" name="thn_pelaksanaan">
+                                                            <option>Pilih Tahun</option>
+                                                            <option value="2025">2025</option>
+                                                            <option value="2024">2024</option>
+                                                            <option value="2023">2023</option>
+                                                            <option value="2022">2022</option>
+                                                            <option value="2021">2021</option>
+                                                            <option value="2020">2020</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div>
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered table-striped mt-3 table">
+                                                <thead>
+                                                    <tr>
+                                                        <th class="text-center" style="width: 40px;">No</th>
+                                                        <th class="">Ketua</th>
+                                                        <th class="">Judul</th>
+                                                        <th class="">Bidang Fokus</th>
+                                                        <th class="" style="text-align: center;">Tahun Pelaksanaan
+                                                        </th>
+                                                        <th class="" style="text-align: center;">Peran</th>
+                                                        <th class="" style="text-align: center;">Status Usulan
+                                                        </th>
+                                                        <th class="" style="text-align: center;">Hasil Penilaian
+                                                        </th>
+                                                        <th class="" style="text-align: center;">Aksi</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    @foreach ($Usulan as $usulan_penelitian_baru)
+                                                        <tr>
+                                                            <td>{{ $loop->iteration }}</td>
+
+                                                            <td>
+                                                                <div class="btn-group">
+                                                                    <a href="{{ url('operator/dosen/show', $usulan_penelitian_baru->id) }}"
+                                                                        class="btn btn-info">
+                                                                        <i class="ri-file-info-line"></i>
+                                                                    </a>
+                                                                    <a href="{{ url('operator/dosen/edit', $usulan_penelitian_baru->id) }}"
+                                                                        class="btn btn-warning">
+                                                                        <i class="ri-edit-circle-line"></i>
+                                                                    </a>
+                                                                    <button class="btn btn-danger" type="button"
+                                                                        data-bs-toggle="modal"
+                                                                        data-bs-target="#hapus{{ $usulan_penelitian_baru->id }}">
+                                                                        <i class="ri-chat-delete-line"></i>
+                                                                    </button>
+                                                                </div>
+                                                            </td>
+                                                            <td>{{ $usulan_penelitian_baru->ketua }}</td>
+                                                            <td>{{ $usulan_penelitian_baru->judul }}</td>
+                                                            <td>{{ $usulan_penelitian_baru->bidang_fokus }}</td>
+                                                            <td>{{ $usulan_penelitian_baru->tahun_pelaksanaan }}</td>
+                                                            <td>{{ $usulan_penelitian_baru->peran }}</td>
+                                                            <td>{{ $usulan_penelitian_baru->status_usulan }}</td>
+                                                            <td>{{ $usulan_penelitian_baru->hasil_penilaian }}</td>
+                                                        </tr>
+                                                        <x-form.delete id="hapus{{ $usulan_penelitian_baru->id }}"
+                                                            action="{{ url('operator/dosen/delete', $usulan_penelitian_baru->id) }}" />
+                                                    @endforeach
+                                                    <tr>
+                                                        <td colspan="11" class="text-center">Data tidak
+                                                            tersedia!
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="d-flex align-items-center row">
-                            <div class="mb-2 col-md-2"><button type="button" disabled=""
-                                    class="btn btn-success btn btn-secondary disabled"><i
-                                        class="bi bi-file-earmark-excel font-size-10 align-middle me-2"></i>Excel</button>
-                            </div>
-                            <div class="d-flex justify-content-end col-md-10">
-                                <h9 class="card-title">Jumlah Proposal:0</h9>
-                            </div>
-                            {{-- <i class="bi bi-file-earmark-excel"></i> --}}
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">
-                        <div class="mb-2 row">
-                            <div class="col-md-12">
-                                <h1 class="card-title">Daftar Usulan</h1>
-                            </div>
-                        </div>
-                        <div>
-                            <div class="p-1 card-body">
-                                <div class="text-center"><img src=" {{ url('assets') }}/assets/img/gambar-3.png"
-                                        class="img-fluid py-5" alt="Page Not Found"></div>
-                                <h5 class="mt-3 card-title text-center">Data tidak tersedia</h5>
                             </div>
                         </div>
                     </div>
@@ -53,4 +111,6 @@
             </div>
         </div>
     </div>
+
+
 </x-layouts.dosen_layouts.app>

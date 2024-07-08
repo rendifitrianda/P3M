@@ -15,7 +15,7 @@
         <section class="content">
             <div class="container-fluid">
                 <div class="card-body">
-                    <form action="{{ url('layout/usulan_baru') }}" method="POST">
+                    <form action="{{ url('dosen/usulan') }}" method="POST">
                         @csrf
                         <div class="row">
                             <div class="col-md-6">
@@ -68,8 +68,8 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <label for="" class="control-label"><b>Hasil Penelitian</b></label>
-                                    <input type="text" name="hasil_penelitian" class="form-control" required>
+                                    <label for="" class="control-label"><b> Hasil Penilaian</b></label>
+                                    <input type="text" name="hasil_penilaian" class="form-control" required>
                                 </div>
                             </div>
                             <div class="col-md- mt-4">

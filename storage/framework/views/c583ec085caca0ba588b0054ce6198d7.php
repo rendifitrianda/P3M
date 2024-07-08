@@ -56,7 +56,7 @@
                 <li>
                     <a class="dropdown-item d-flex align-items-center" href="#">
                         <i class="bi bi-box-arrow-right"></i>
-                        <span>Sign Out</span>
+                        <span <?php echo e(url('auth/logout')); ?>>Sign Out</span>
                     </a>
                 </li>
 

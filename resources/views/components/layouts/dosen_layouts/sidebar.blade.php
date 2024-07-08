@@ -19,17 +19,17 @@
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('dosen/usulan/{perbaikan}') }}">
+                    <a href="{{ url('dosen/perbaikan_usulan') }}">
                         <i class="bi bi-circle"></i><span>Perbaikan Usulan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('dosen/laporan/{kemajuan}') }}">
+                    <a href="{{ url('dosen/laporan_kemajuan') }}">
                         <i class="bi bi-circle"></i><span>laporan kemajuan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="{{ url('dosen/laporan/{akhir}') }}">
+                    <a href="{{ url('dosen/laporan_akhir') }}">
                         <i class="bi bi-circle"></i><span>Laporan Akhir</span>
                     </a>
                 </li>

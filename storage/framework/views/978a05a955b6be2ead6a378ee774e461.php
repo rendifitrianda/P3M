@@ -19,17 +19,17 @@
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo e(url('dosen/usulan/{perbaikan}')); ?>">
+                    <a href="<?php echo e(url('dosen/perbaikan_usulan')); ?>">
                         <i class="bi bi-circle"></i><span>Perbaikan Usulan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo e(url('dosen/laporan/{kemajuan}')); ?>">
+                    <a href="<?php echo e(url('dosen/laporan_kemajuan')); ?>">
                         <i class="bi bi-circle"></i><span>laporan kemajuan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="<?php echo e(url('dosen/laporan/{akhir}')); ?>">
+                    <a href="<?php echo e(url('dosen/laporan_akhir')); ?>">
                         <i class="bi bi-circle"></i><span>Laporan Akhir</span>
                     </a>
                 </li>

@@ -9,6 +9,18 @@ class AuthController extends Controller
     function index(){
         return view('login');
     }
+
+    public function logout(Request $request)
+    {
+        Auth::guard('dosen')->logout();
+     
+        $request->session()->invalidate();
+     
+        $request->session()->regenerateToken();
+     
+        return redirect('/');
+    }
+
     function aksiLogin(Request $request){
         
         $credentials = $request->validate([
@@ -36,6 +48,8 @@ class AuthController extends Controller
             return back()->with('success', 'Login Gagal !');
         }
 
+
+       
         
         
 

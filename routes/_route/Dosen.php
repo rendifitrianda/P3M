@@ -2,6 +2,10 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Dosen\UsulanController;
 use App\Http\Controllers\Dosen\DashboardController;
+use App\Http\Controllers\Dosen\LaporanAkhirController;
+use App\Http\Controllers\Dosen\CatatanHarianController;
+use App\Http\Controllers\Dosen\LaporanKemajuanController;
+use App\Http\Controllers\Dosen\PerbaikanUsulanController;
 
 
 
@@ -11,6 +15,32 @@ Route::controller(DashboardController::class)->group(function () {
 
 Route::prefix('usulan')->group(function(){
     Route::controller(UsulanController::class)->group(function () {
+        Route::get('/',  'index');
+        Route::get('create', 'create');
+        Route::post('/', 'store');
+    });
+});
+
+Route::prefix('perbaikan_usulan')->group(function(){
+    Route::controller(PerbaikanUsulanController::class)->group(function () {
+        Route::get('/',  'index');
+    });
+});
+
+Route::prefix('laporan_kemajuan')->group(function(){
+    Route::controller(LaporanKemajuanController::class)->group(function () {
+        Route::get('/',  'index');
+    });
+});
+
+Route::prefix('catatan_harian')->group(function(){
+    Route::controller(LaporanKemajuanController::class)->group(function () {
+        Route::get('/',  'index');
+    });
+});
+
+Route::prefix('laporan_akhir')->group(function(){
+    Route::controller(LaporanAkhirController::class)->group(function () {
         Route::get('/',  'index');
     });
 });

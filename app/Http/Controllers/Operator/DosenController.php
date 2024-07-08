@@ -13,7 +13,7 @@ class DosenController extends Controller
      */
     public function index()
     {
-        $data['list_dosen'] = Dosen::all();
+        $data['dosen'] = Dosen::all();
         return view('operator.dosen.index', $data);
     }
 

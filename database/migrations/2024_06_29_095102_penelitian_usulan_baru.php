@@ -16,7 +16,6 @@ return new class extends Migration
             $table->string('ketua', 255); 
             $table->string('judul', 255); 
             $table->string ('bidang_fokus', 255); 
-            $table->string ('institusi', 255);  
             $table->string('tahun_pelaksanaan', 255);
             $table->string('peran', 255);
             $table->string('status_usulan', 255); 

@@ -11,10 +11,10 @@
          <i class="bi bi-list toggle-sidebar-btn" style="color: white"></i>
      </div><!-- End Logo -->
      
-     <?php if (isset($component)) { $__componentOriginal0616645615ea9d8d257cab7342afc5be = $component; } ?>
-<?php if (isset($attributes)) { $__attributesOriginal0616645615ea9d8d257cab7342afc5be = $attributes; } ?>
-<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.templating.profile','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
-<?php $component->withName('templating.profile'); ?>
+     <?php if (isset($component)) { $__componentOriginal1d6f9a601516b7d78ecf3ffe4f0ef28b = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal1d6f9a601516b7d78ecf3ffe4f0ef28b = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.layouts.dosen_layouts.profile','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? $attributes->all() : [])); ?>
+<?php $component->withName('layouts.dosen_layouts.profile'); ?>
 <?php if ($component->shouldRender()): ?>
 <?php $__env->startComponent($component->resolveView(), $component->data()); ?>
 <?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag): ?>
@@ -23,13 +23,13 @@
 <?php $component->withAttributes([]); ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
-<?php if (isset($__attributesOriginal0616645615ea9d8d257cab7342afc5be)): ?>
-<?php $attributes = $__attributesOriginal0616645615ea9d8d257cab7342afc5be; ?>
-<?php unset($__attributesOriginal0616645615ea9d8d257cab7342afc5be); ?>
+<?php if (isset($__attributesOriginal1d6f9a601516b7d78ecf3ffe4f0ef28b)): ?>
+<?php $attributes = $__attributesOriginal1d6f9a601516b7d78ecf3ffe4f0ef28b; ?>
+<?php unset($__attributesOriginal1d6f9a601516b7d78ecf3ffe4f0ef28b); ?>
 <?php endif; ?>
-<?php if (isset($__componentOriginal0616645615ea9d8d257cab7342afc5be)): ?>
-<?php $component = $__componentOriginal0616645615ea9d8d257cab7342afc5be; ?>
-<?php unset($__componentOriginal0616645615ea9d8d257cab7342afc5be); ?>
+<?php if (isset($__componentOriginal1d6f9a601516b7d78ecf3ffe4f0ef28b)): ?>
+<?php $component = $__componentOriginal1d6f9a601516b7d78ecf3ffe4f0ef28b; ?>
+<?php unset($__componentOriginal1d6f9a601516b7d78ecf3ffe4f0ef28b); ?>
 <?php endif; ?>
  </header><!-- End Header -->
 <?php /**PATH C:\laragon\www\P3M\resources\views/components/layouts/dosen_layouts/navbar.blade.php ENDPATH**/ ?>

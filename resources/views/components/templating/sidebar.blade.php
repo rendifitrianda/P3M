@@ -2,7 +2,7 @@
 <aside id="sidebar" class="sidebar">
     <ul class="sidebar-nav" id="sidebar-nav">
         <li class="nav-item">
-            <a class="nav-link collapsed" href="layout/dashboard">
+            <a class="nav-link collapsed" href="">
                 <i class="ri-dashboard-line"></i>
                 <span>Dashboard</span>
             </a>
@@ -14,27 +14,27 @@
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="usulan_baru">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Usulan Baru</span>
                     </a>
                 </li>
                 <li>
-                    <a href="perbaikan_usulan_dosen">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Perbaikan Usulan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="laporan_kemajuan_dosen">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>laporan kemajuan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="laporan_akhir_dosen">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Laporan Akhir</span>
                     </a>
                 </li>
                 <li>
-                    <a href="catatan_harian_dosen">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Catatan Harian</span>
                     </a>
                 </li>
@@ -47,27 +47,27 @@
             </a>
             <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
                 <li>
-                    <a href="usulan_baru">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Usulan Baru</span>
                     </a>
                 </li>
                 <li>
-                    <a href="perbaikan_usulan">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Perbaikan Usulan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="laporan_kemajuan">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Laporan Kemajuan</span>
                     </a>
                 </li>
                 <li>
-                    <a href="laporan_akhir">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Laporan Akhir</span>
                     </a>
                 </li>
                 <li>
-                    <a href="catatan_harian">
+                    <a href="">
                         <i class="bi bi-circle"></i><span>Catatan Harian</span>
                     </a>
                 </li>

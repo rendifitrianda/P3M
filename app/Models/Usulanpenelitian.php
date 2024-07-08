@@ -8,6 +8,4 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Usulanpenelitian extends Model
 {
    protected $table = 'penelitian_usulan_baru';
-    
-   
 }
